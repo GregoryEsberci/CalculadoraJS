@@ -21,3 +21,5 @@ document.getElementById('calcular').addEventListener('click', function () {
         document.getElementById('resultado').innerHTML = n1 / n2;
     }
 });
+
+

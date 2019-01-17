@@ -1,0 +1,122 @@
+<html>
+
+<head>
+  <title>Titulo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+"
+    crossorigin="anonymous">
+
+  <style>
+    body {
+            background-image: url("1.png");
+        }
+
+        .fixa{
+  position: fixed;
+  background-color: rgb(58, 57, 57) ;
+  top: 0;
+}
+
+nav{
+height: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+margin-top: 10px;
+}
+
+.paddingb10{
+  padding-bottom: 10px
+}
+
+
+li {
+  float: left;
+
+  border-right: 1px white solid;
+}
+li a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;  
+}
+
+li a:hover {
+  background-color: rgb(73, 73, 73) ;
+  color: white;
+  
+}
+
+.logo{
+  float: left;
+  position: relative;
+}
+
+li:first-child {
+border-left: none;
+}
+li:last-child {
+border-right: none;
+}
+
+.backgrounddiv{
+background-color: rgba(0, 0, 0, 0.25)
+}
+
+.box{
+  padding-bottom: 25px; 
+  border: hidden; 
+  border-radius: 20px; 
+  margin-top: 60px
+
+}
+
+.font{font-family: 'Times New Roman';
+      font-size: 18px;}
+
+
+.textcenter{
+  text-align: center
+}
+
+    </style>
+</head>
+
+<body>
+  <!--Barra superior-->
+  <div class="col-xs-12 fixa">
+
+    <img src="2.png" class="img-responsive logo">
+    <nav class="container paddingb10">
+      <ul>
+        <li><a href="calculadora.html">Cálculos gerais</a></li>
+        <li><a href="">Bhaskara</a></li>
+        <li><a href="">Geometria</a></li>
+        <li><a href="">Conversores</a></li>
+        <li><a href="">Financeiro</a></li>
+        <li><a href="fibonacci.html">Fibonacci</a></li>
+      </ul>
+    </nav>
+
+  </div>
+  <div class="container border1 backgrounddiv box">
+
+    <h1 class="textcenter">Titulo</h1>
+
+    <input type="number" id="quantidade"> <br />
+    <button id="acao">Exibir</button> <br />
+    <span id="tela"></span>
+
+
+
+
+
+
+
+</body>
+
+<script type="text/javascript" src="fibonacci.JS"></script>
+
+</html>
