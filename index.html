@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <title>Calculadora</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container" style="padding-bottom: 1.5%; border: 1px 	#DCDCDC solid; border-radius: 20px; margin-top: 1.5%">
+
+    <h1 style="text-align: center">Calculadora</h1>
+
+    <hr />
+    <!--Valor 1-->
+    <div class="row form-horizontal">
+      <div class="col-xs-1" style="font-size: 17px; ">
+        <label for="n1" class="control-label">1º valor:</label>
+      </div>
+      <div class="col-xs-2" style="padding-left: unset;">
+        <input type="text" class="form-control" required="required" id="n1" placeholder="Digite um valor" />
+      </div>
+
+      
+      <!--Valor 2-->
+
+      <div class="col-xs-1" style="font-size: 17px;">
+        <label for="n1" class="control-label">2º valor:</label>
+      </div>
+      <div class="col-xs-2" style="padding-left: unset;">
+        <input type="text" class="form-control" required="required" id="n2" placeholder="Digite um valor" />
+      </div>
+
+      <!--Selecao de operacao-->
+
+      <div class="col-xs-1">
+          <label for="operacao" class="control-label" style="font-size: 17px;">
+            Operação:</label>
+        </div>
+        <div class="col-xs-2" style="margin: unset">
+          <select class="form-control" id="operacao">
+            <option value="soma">Somar</option>
+            <option value="subtrair">Subtrair</option>
+            <option value="dividir">Dividir</option>
+            <option value="multiplicar">Multiplicar</option>
+          </select>
+        </div>
+  
+
+      <!--Enviar-->
+      <div class="col-xs-1">
+        <button id="calcular" class="btn btn-primary">Calcular</button>
+      </div>
+
+      <!--Exibe o resultado-->
+      <div class="col-xs-2 control-label" style="font-size: 17px; text-align: left">
+        <label> Resultado:</label>
+        <span id="resultado"></span>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="script.JS"></script>
+
+</body>
+
+</html>
