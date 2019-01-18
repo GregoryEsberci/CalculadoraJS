@@ -1,9 +1,8 @@
 <html>
 
 <head>
-    <title>Titulo</title>
+    <title>Bhaskara</title>
     <meta charset="utf-8">
-
     <!--getbootstrap-->
 
     <!-- Latest compiled and minified CSS -->
@@ -25,11 +24,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw"
         crossorigin="anonymous"></script>
-
-
-
-
-    <link rel="stylesheet" type="text/css" href="css/">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <style href="">
 
@@ -55,16 +50,37 @@
     </div>
     <div class="container border1 backgrounddiv box">
 
-        <h1 class="textcenter">Titulo</h1>
+        <h1 class="textcenter">Bhaskara</h1>
         <hr>
 
+        <div class="row form-horizontal">
+
+            <p>Lembre-se: AX² + BX + C = 0</p>
+            <div class="">
+                <label>A: </label>
+                <input type="text" id="a" value="2" />
+            </div>
 
 
+            <div class="">
+                <label>B: </label>
+                <input type="text" id="b" value="12" />
+            </div>
 
+            <div class="">
+                <label>C: </label>
+                <input type="text" id="c" value="-14" />
+            </div>
 
+            <button id="acao" class="">enviar</button><br>
+
+            X': <span id="x1"></span><br>
+            X": <span id="x2"></span><br>
+            Delta: <span id="delta"></span>
+        </div>
 
 </body>
 
-<script type="text/javascript" src="script/"></script>
+<script type="text/javascript" src="script/bhaskara.JS"></script>
 
 </html>
