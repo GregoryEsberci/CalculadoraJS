@@ -12,10 +12,10 @@ document.getElementById('acao').addEventListener('click', (primeiro) => {
         tela = tela + ', ' + primeiro;
         auxiliar = primeiro;
         primeiro = segundo + auxiliar;
-        segundo = auxiliar;        
+        segundo = auxiliar;
         i++;
     }
-    
+
     document.getElementById('tela').innerHTML = tela;
     return primeiro;
 

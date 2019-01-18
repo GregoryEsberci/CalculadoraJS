@@ -1,87 +1,18 @@
 <html>
 
 <head>
-  <title>Titulo</title>
+  <title>Fibonacci</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+"
     crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <style>
-    body {
-            background-image: url("1.png");
-        }
-
-        .fixa{
-  position: fixed;
-  background-color: rgb(58, 57, 57) ;
-  top: 0;
-}
-
-nav{
-height: 100%;
-}
-
-nav ul {
-  list-style-type: none;
-margin-top: 10px;
-}
-
-.paddingb10{
-  padding-bottom: 10px
-}
 
 
-li {
-  float: left;
 
-  border-right: 1px white solid;
-}
-li a {
-  color: white;
-  padding: 16px;
-  text-decoration: none;  
-}
-
-li a:hover {
-  background-color: rgb(73, 73, 73) ;
-  color: white;
-  
-}
-
-.logo{
-  float: left;
-  position: relative;
-}
-
-li:first-child {
-border-left: none;
-}
-li:last-child {
-border-right: none;
-}
-
-.backgrounddiv{
-background-color: rgba(0, 0, 0, 0.25)
-}
-
-.box{
-  padding-bottom: 25px; 
-  border: hidden; 
-  border-radius: 20px; 
-  margin-top: 60px
-
-}
-
-.font{font-family: 'Times New Roman';
-      font-size: 18px;}
-
-
-.textcenter{
-  text-align: center
-}
-
-    </style>
+  </style>
 </head>
 
 <body>
@@ -101,20 +32,40 @@ background-color: rgba(0, 0, 0, 0.25)
     </nav>
 
   </div>
+
   <div class="container border1 backgrounddiv box">
+    <h1 class="textcenter">Fibonacci</h1>
 
-    <h1 class="textcenter">Titulo</h1>
+    <hr>
+    <div class="">
+      <div class="form-horizontal row">
 
-    <input type="number" id="quantidade"> <br />
-    <button id="acao">Exibir</button> <br />
-    <span id="tela"></span>
+        <!--Exibir campo-->
+        <div class="col-xs-6">
+          <div class="col-xs-8 padding-r-0">
+            <label for="quantidade" class="control-label font">Quantidade de dígitos que deseja exibir: </label>
+          </div>
+          <div class="col-xs-4 padding-l-0">
+            <input type="text" class="form-control" required="required" id="quantidade" placeholder="Digite um valor"
+              autocomplete="off" />
+          </div>
+
+          <!--Botao-->
 
 
+        </div>
+
+        <div class="col-xs-6">
+          <button id="acao" class="btn btn-primary">Exibir</button> <br />
+        </div>
+      </div>
+
+      <div class="col-xs-12 margin-t-20">
+        <span id="tela" class="bold line-height-150"></span>
+      </div>
 
 
-
-
-
+    </div>
 </body>
 
 <script type="text/javascript" src="fibonacci.JS"></script>
