@@ -69,9 +69,9 @@
         </ul>
 
         <!--Input 1-->
-        <input type="text" id="valor1" autofocus="autofocus">
+        <input type="text" id="valor1" autofocus="autofocus" oninput="v1()">
         <!--Input 2-->
-        <input type="text" id="valor2">
+        <input type="text" id="valor2" oninput="v2()">
 
 
         <!--Tab's-->
@@ -79,25 +79,25 @@
             <!--distancias-->
             <div class="tab-pane active" id="distancias">
                 <div style="display: inline">
-                    <select id="selecao1">
-                        <option value="km">Quilômetro (km)</option>
-                        <option value="hm">Hectômetro (hm)</option>
-                        <option value="dam">Decâmetro (dam)</option>
-                        <option value="m">Metro (m)</option>
-                        <option value="dm">Decímetro (dm)</option>
-                        <option value="cm">Centímetro (cm)</option>
-                        <option value="ml">Milímetro (ml)</option>
+                    <select  id="selecao1" onchange="v1()">
+                            <option value="1000000">Quilômetro (km)</option>
+                            <option value="100000">Hectômetro (hm)</option>
+                            <option value="10000">Decâmetro (dam)</option>
+                            <option value="1000">Metro (m)</option>
+                            <option value="100">Decímetro (dm)</option>
+                            <option value="10">Centímetro (cm)</option>
+                            <option value="1">Milímetro (ml)</option>
                     </select>
                 </div>
                 <div style="display: inline">
-                    <select id="selecao2">
-                        <option value="km">Quilômetro (km)</option>
-                        <option value="hm">Hectômetro (hm)</option>
-                        <option value="dam">Decâmetro (dam)</option>
-                        <option value="m">Metro (m)</option>
-                        <option value="dm">Decímetro (dm)</option>
-                        <option value="cm">Centímetro (cm)</option>
-                        <option value="ml">Milímetro (ml)</option>
+                    <select id="selecao2" onchange="v2()">
+                            <option value="1000000">Quilômetro (km)</option>
+                            <option value="100000">Hectômetro (hm)</option>
+                            <option value="10000">Decâmetro (dam)</option>
+                            <option value="1000">Metro (m)</option>
+                            <option value="100">Decímetro (dm)</option>
+                            <option value="10">Centímetro (cm)</option>
+                            <option value="1">Milímetro (ml)</option>
                     </select>
                 </div>
             </div>
@@ -106,25 +106,25 @@
             <div class="tab-pane" id="massa">
 
                 <div style="display: inline">
-                    <select id="selecao1">
-                        <option value="k">Quilograma (kg)</option>
-                        <option value="h">Hectograma (hg)</option>
-                        <option value="da">Decagrama (dag)</option>
-                        <option value="b">Grama (g)</option>
-                        <option value="d">Decigrama (dg)</option>
-                        <option value="c">Centigrama (cg)</option>
-                        <option value="m">Miligrama (mg)</option>
+                    <select  id="selecao1" onchange="v1()">
+                            <option value="1000000">Hectograma (hg)</option>
+                            <option value="100000">Quilograma (kg)</option>
+                            <option value="10000">Decagrama (dag)</option>
+                            <option value="1000">Grama (g)</option>
+                            <option value="100">Decigrama (dg)</option>
+                            <option value="10">Centigrama (cg)</option>
+                            <option value="1">Miligrama (mg)</option>
                     </select>
                 </div>
                 <div style="display: inline">
-                    <select id="selecao2">
-                        <option value="k">Quilograma (kg)</option>
-                        <option value="h">Hectograma (hg)</option>
-                        <option value="da">Decagrama (dag)</option>
-                        <option value="b">Grama (g)</option>
-                        <option value="d">Decigrama (dg)</option>
-                        <option value="c">Centigrama (cg)</option>
-                        <option value="m">Miligrama (mg)</option>
+                    <select id="selecao2" onchange="v2()">
+                            <option value="1000000">Hectograma (hg)</option>
+                            <option value="100000">Quilograma (kg)</option>
+                            <option value="10000">Decagrama (dag)</option>
+                            <option value="1000">Grama (g)</option>
+                            <option value="100">Decigrama (dg)</option>
+                            <option value="10">Centigrama (cg)</option>
+                            <option value="1">Miligrama (mg)</option>
                     </select>
                 </div>
 
@@ -134,25 +134,25 @@
             <!--capacidade-->
             <div class="tab-pane" id="capacidade">
                 <div style="display: inline">
-                    <select id="selecao1">
-                        <option value="k">Quilolitro (kl)</option>
-                        <option value="h">Hectolitro (hl)</option>
-                        <option value="da">decalitro (dal)</option>
-                        <option value="b">litro (l)</option>
-                        <option value="d">decilitro (dl)</option>
-                        <option value="c">centilitro (cl)</option>
-                        <option value="m">mililitro (ml)</option>
+                    <select  id="selecao1" onchange="v1()">
+                            <option value="1000000">Hectolitro (hl)</option>
+                            <option value="100000">Quilolitro (kl)</option>
+                            <option value="10000">decalitro (dal)</option>
+                            <option value="1000">litro (l)</option>
+                            <option value="100">decilitro (dl)</option>
+                            <option value="10">centilitro (cl)</option>
+                            <option value="1">mililitro (ml)</option>
                     </select>
                 </div>
                 <div style="display: inline">
-                    <select id="selecao2">
-                        <option value="k">Quilolitro (kl)</option>
-                        <option value="h">Hectolitro (hl)</option>
-                        <option value="da">decalitro (dal)</option>
-                        <option value="b">litro (l)</option>
-                        <option value="d">decilitro (dl)</option>
-                        <option value="c">centilitro (cl)</option>
-                        <option value="m">mililitro (ml)</option>
+                    <select id="selecao2" onchange="v2()">
+                            <option value="1000000">Hectolitro (hl)</option>
+                            <option value="100000">Quilolitro (kl)</option>
+                            <option value="10000">decalitro (dal)</option>
+                            <option value="1000">litro (l)</option>
+                            <option value="100">decilitro (dl)</option>
+                            <option value="10">centilitro (cl)</option>
+                            <option value="1">mililitro (ml)</option>
                     </select>
                 </div>
             </div>
@@ -160,54 +160,29 @@
             <!--volume-->
             <div class="tab-pane" id="Volume">
                 <div style="display: inline">
-                    <select id="selecao1">
-                        <option value="k">Quilômetro cúbico (km3)</option>
-                        <option value="h">Hectômetro cúbico (hm3)</option>
-                        <option value="da">Decâmetro cúbico (dam3)</option>
-                        <option value="b">Metro cúbico (m3)</option>
-                        <option value="d">Decímetro cúbico (dm3)</option>
-                        <option value="c">Centímetro cúbico (cm3)</option>
-                        <option value="m">Milímetro cúbico (mm3)</option>
+                    <select  id="selecao1" onchange="v1()">
+                            <option value="1000000">Hectômetro cúbico (hm3)</option>
+                            <option value="100000">Quilômetro cúbico (km3)</option>
+                            <option value="10000">Decâmetro cúbico (dam3)</option>
+                            <option value="1000">Metro cúbico (m3)</option>
+                            <option value="100">Decímetro cúbico (dm3)</option>
+                            <option value="10">Centímetro cúbico (cm3)</option>
+                            <option value="1">Milímetro cúbico (mm3)</option>
                     </select>
                 </div>
                 <div style="display: inline">
-                    <select id="selecao2">
-                        <option value="k">Quilômetro cúbico (km3)</option>
-                        <option value="h">Hectômetro cúbico (hm3)</option>
-                        <option value="da">Decâmetro cúbico (dam3)</option>
-                        <option value="b">Metro cúbico (m3)</option>
-                        <option value="d">Decímetro cúbico (dm3)</option>
-                        <option value="c">Centímetro cúbico (cm3)</option>
-                        <option value="m">Milímetro cúbico (mm3)</option>
+                    <select id="selecao2" onchange="v2()">
+                            <option value="1000000">Hectômetro cúbico (hm3)</option>
+                            <option value="100000">Quilômetro cúbico (km3)</option>
+                            <option value="10000">Decâmetro cúbico (dam3)</option>
+                            <option value="1000">Metro cúbico (m3)</option>
+                            <option value="100">Decímetro cúbico (dm3)</option>
+                            <option value="10">Centímetro cúbico (cm3)</option>
+                            <option value="1">Milímetro cúbico (mm3)</option>
                     </select>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
 
