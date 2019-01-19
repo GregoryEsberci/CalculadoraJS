@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <title>Geometria</title>
+    <meta charset="utf-8">
+    <!--getbootstrap-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css"
+        integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style href="">
+
+    </style>
+</head>
+
+<body>
+    <!--Barra superior-->
+    <div class="col-xs-12 fixa">
+
+        <img src="img/logo.png" class="img-responsive logo">
+        <nav class="container paddingb10">
+            <ul class="list-superiorr">
+                <li><a href="calculadora.html">Cálculos gerais</a></li>
+                <li><a href="bhaskara.html">Bhaskara</a></li>
+                <li><a href="">Geometria</a></li>
+                <li><a href="conversor.html">Conversor</a></li>
+                <li><a href="">Financeiro</a></li>
+                <li><a href="fibonacci.html">Fibonacci</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="container border1 backgrounddiv box">
+
+        <h1 class="textcenter">Geometria</h1>
+        <hr>
+
+
+
+        <!--Lista de medidas-->
+        <ul class="nav nav-tabs" role="tablist">
+
+            <li class="dropdown">
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Distancia<b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+                    <li class="activeasa"><a href="#distancias" role="tab" data-toggle="tab">Distancia</a></li>
+                    <li><a href="#massa" role="tab" data-toggle="tab">Massa</a></li>
+                    <li><a href="#capacidade" role="tab" data-toggle="tab">Capacidade</a></li>
+                    <li><a href="#volume" role="tab" data-toggle="tab">Volume</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!--Input 1-->
+        <input type="text" id="valor1">
+        <!--Input 2-->
+        <input type="text" id="valor2">
+
+
+        <!--Tab's-->
+        <div class="tab-content">
+            <!--distancias-->
+            <div class="tab-pane active" id="distancias">
+                <div style="display: inline">
+                    <select id="selecao1">
+                        <option value="km">Quilômetro (km)</option>
+                        <option value="hm">Hectômetro (hm)</option>
+                        <option value="dam">Decâmetro (dam)</option>
+                        <option value="m">Metro (m)</option>
+                        <option value="dm">Decímetro (dm)</option>
+                        <option value="cm">Centímetro (cm)</option>
+                        <option value="ml">Milímetro (ml)</option>
+                    </select>
+                </div>
+                <div style="display: inline">
+                    <select id="selecao2">
+                        <option value="km">Quilômetro (km)</option>
+                        <option value="hm">Hectômetro (hm)</option>
+                        <option value="dam">Decâmetro (dam)</option>
+                        <option value="m">Metro (m)</option>
+                        <option value="dm">Decímetro (dm)</option>
+                        <option value="cm">Centímetro (cm)</option>
+                        <option value="ml">Milímetro (ml)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--massa-->
+            <div class="tab-pane" id="massa">
+
+                <div style="display: inline">
+                    <select id="selecao1">
+                        <option value="k">Quilograma (kg)</option>
+                        <option value="h">Hectograma (hg)</option>
+                        <option value="da">Decagrama (dag)</option>
+                        <option value="b">Grama (g)</option>
+                        <option value="d">Decigrama (dg)</option>
+                        <option value="c">Centigrama (cg)</option>
+                        <option value="m">Miligrama (mg)</option>
+                    </select>
+                </div>
+                <div style="display: inline">
+                    <select id="selecao2">
+                        <option value="k">Quilograma (kg)</option>
+                        <option value="h">Hectograma (hg)</option>
+                        <option value="da">Decagrama (dag)</option>
+                        <option value="b">Grama (g)</option>
+                        <option value="d">Decigrama (dg)</option>
+                        <option value="c">Centigrama (cg)</option>
+                        <option value="m">Miligrama (mg)</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <!--capacidade-->
+            <div class="tab-pane" id="capacidade">
+                <div style="display: inline">
+                    <select id="selecao1">
+                        <option value="k">Quilolitro (kl)</option>
+                        <option value="h">Hectolitro (hl)</option>
+                        <option value="da">decalitro (dal)</option>
+                        <option value="b">litro (l)</option>
+                        <option value="d">decilitro (dl)</option>
+                        <option value="c">centilitro (cl)</option>
+                        <option value="m">mililitro (ml)</option>
+                    </select>
+                </div>
+                <div style="display: inline">
+                    <select id="selecao2">
+                        <option value="k">Quilolitro (kl)</option>
+                        <option value="h">Hectolitro (hl)</option>
+                        <option value="da">decalitro (dal)</option>
+                        <option value="b">litro (l)</option>
+                        <option value="d">decilitro (dl)</option>
+                        <option value="c">centilitro (cl)</option>
+                        <option value="m">mililitro (ml)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!--volume-->
+            <div class="tab-pane" id="Volume">
+                <div style="display: inline">
+                    <select id="selecao1">
+                        <option value="k">Quilômetro cúbico (km3)</option>
+                        <option value="h">Hectômetro cúbico (hm3)</option>
+                        <option value="da">Decâmetro cúbico (dam3)</option>
+                        <option value="b">Metro cúbico (m3)</option>
+                        <option value="d">Decímetro cúbico (dm3)</option>
+                        <option value="c">Centímetro cúbico (cm3)</option>
+                        <option value="m">Milímetro cúbico (mm3)</option>
+                    </select>
+                </div>
+                <div style="display: inline">
+                    <select id="selecao2">
+                        <option value="k">Quilômetro cúbico (km3)</option>
+                        <option value="h">Hectômetro cúbico (hm3)</option>
+                        <option value="da">Decâmetro cúbico (dam3)</option>
+                        <option value="b">Metro cúbico (m3)</option>
+                        <option value="d">Decímetro cúbico (dm3)</option>
+                        <option value="c">Centímetro cúbico (cm3)</option>
+                        <option value="m">Milímetro cúbico (mm3)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+<script type="text/javascript" src="script/geometria.JS"></script>
+
+</html>
