@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css"
         integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw"
-        crossorigin="anonymous"></script>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
         crossorigin="anonymous"></script>
@@ -26,7 +22,57 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <style href="">
+    <style>
+
+        .abc label {
+            float: left; 
+            width:7%;
+            margin-top: 5px;
+        }
+
+        .abc p{
+            float: left; 
+            width:7%;
+        }
+
+        .enviar{
+            float: left; 
+            margin-left: 7px;
+            margin-top: 5px;
+        }
+
+        .enviar button{
+            width: 100%
+        }
+
+        .limite{
+            width: 50%;
+            float: left;
+        }
+
+        .text{
+            height: 100px; 
+            border-left: 2px solid rgb(201, 200, 200);
+            border-right:  2px solid rgb(201, 200, 200);
+            border-radius: 30px;
+            padding-left: 3%;
+            padding-bottom: 0px
+        }
+
+        .text img {
+            float: right; 
+            margin-top: 30px; 
+            margin-right: 20px 
+        }
+
+        .text ul {
+            font-size: 16px;
+            
+        }
+
+        .text h2 {
+            margin-top: 5px
+        }
 
     </style>
 </head>
@@ -35,12 +81,12 @@
     <!--Barra superior-->
     <div class="col-xs-12 fixa">
 
-        <img src="img/logo.png" class="img-responsive logo">
-        <nav class="container paddingb10">
+        <a href="calculadora.html">  <img src="img/logo.png" class="img-responsive logo"></a>
+        <nav class="container paddingb10 height-100">
             <ul class="list-superiorr">
                 <li><a href="calculadora.html">Cálculos gerais</a></li>
                 <li><a href="bhaskara.html">Bhaskara</a></li>
-                <li><a href="">Geometria</a></li>
+                <li><a href="geometria.html">Geometria</a></li>
                 <li><a href="conversor.html">Conversor</a></li>
                 <li><a href="">Financeiro</a></li>
                 <li><a href="fibonacci.html">Fibonacci</a></li>
@@ -48,37 +94,83 @@
         </nav>
 
     </div>
+
     <div class="container border1 backgrounddiv box">
 
         <h1 class="textcenter">Bhaskara</h1>
         <hr>
 
-        <div class="row form-horizontal">
+        <div class="col-xs-3">
+            <div class="row abc">
 
-            <p>Lembre-se: AX² + BX + C = 0</p>
-            <div class="">
-                <label>A: </label>
-                <input type="text" id="a" value="2" />
+                <!--Valor A-->
+                <div class="col-xs-4">
+                    <div>
+                        <label for="a" class="font">A: </label>
+                    </div>
+                    <div class="col-xs-10">
+                        <input class="form-control" type="text" id="a" autofocus="autofocus" />
+                    </div>
+                </div>
+
+                <div class="control-label font">
+                    <p>X':</p> <span id="x1" class="bold"></span><br>
+                </div>
+
             </div>
 
+            <div class="row abc">
+                <!--Valor B-->
+                <div class="col-xs-4">
+                    <div class="abc">
+                        <label for="b" class="font">B: </label>
+                    </div>
+                    <div class="col-xs-10">
+                        <input type="text" id="b" class="form-control" />
+                    </div>
+                </div>
 
-            <div class="">
-                <label>B: </label>
-                <input type="text" id="b" value="12" />
+                <div class="control-label font">
+                    <p>X": </p><span class="bold" id="x2"></span><br>
+                </div>
             </div>
 
-            <div class="">
-                <label>C: </label>
-                <input type="text" id="c" value="-14" />
+            <div class="row abc">
+                <!--Valor C-->
+                <div class="col-xs-4">
+                    <div class="abc">
+                        <label for="c" class="font">C: </label>
+                    </div>
+                    <div class="col-xs-10">
+                        <input type="text" id="c" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="control-label font">
+                    <p>Δ: </p><span class="bold" id="delta"></span>
+                </div>
+
             </div>
-
-            <button id="acao" class="">enviar</button><br>
-
-            X': <span id="x1"></span><br>
-            X": <span id="x2"></span><br>
-            Delta: <span id="delta"></span>
+            <div class="col-xs-3 enviar">
+                <button id="acao" class="btn btn-primary">enviar</button>
+            </div>
         </div>
 
+        <div class="col-xs-7 text">
+            <div class="col-xs-7">
+                <h2>Lembre-se:</h2>
+                <ul class="list-unstyled">
+                    <li>AX² + BX + C = 0 ;</li>
+                    <li>Sendo que A ≠ 0 .</li>
+                </ul>
+            </div>
+            <img src="img/bhaskara.png" class="img-responsive">
+
+        </div>
+
+
+
+    </div>
 </body>
 
 <script type="text/javascript" src="script/bhaskara.JS"></script>

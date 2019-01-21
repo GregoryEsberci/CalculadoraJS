@@ -23,7 +23,10 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <style href="">
+    <style>
+        #selecao1, #selecao2 {
+            width: 100%;
+        }
 
     </style>
 </head>
@@ -32,12 +35,12 @@
     <!--Barra superior-->
     <div class="col-xs-12 fixa">
 
-        <img src="img/logo.png" class="img-responsive logo">
-        <nav class="container paddingb10">
+        <a href="calculadora.html"> <img src="img/logo.png" class="img-responsive logo"></a>
+        <nav class="container paddingb10 height-100">
             <ul class="list-superiorr">
                 <li><a href="calculadora.html">Cálculos gerais</a></li>
                 <li><a href="bhaskara.html">Bhaskara</a></li>
-                <li><a href="">Geometria</a></li>
+                <li><a href="geometria.html">Geometria</a></li>
                 <li><a href="conversor.html">Conversor</a></li>
                 <li><a href="">Financeiro</a></li>
                 <li><a href="fibonacci.html">Fibonacci</a></li>
@@ -47,39 +50,52 @@
     </div>
     <div class="container border1 backgrounddiv box">
 
-        <h1 class="textcenter">Geometria</h1>
+        <h1 class="textcenter">Conversor</h1>
         <hr>
 
+        <div class="row">
+            <!--Input 1-->
+            <div class="col-xs-2">
+                <input type="text" id="valor1" autofocus="autofocus" oninput="v1()" class="form-control">
+            </div>
 
 
-        <!--Lista de medidas-->
-        <ul class="nav nav-tabs" role="tablist">
+            <!--Sinal igual-->
 
-            <li class="dropdown">
+            <div class="igual">
+                <div></div>
+                <div></div>
+            </div>
 
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Distancia<b class="caret"></b></a>
+            <!--Input 2-->
+            <div class="col-xs-2">
+                <input type="text" id="valor2" oninput="v2()" class="form-control">
+            </div>
 
-                <ul class="dropdown-menu">
-                    <li class="activeasa"><a href="#distancias" role="tab" data-toggle="tab">Distancia</a></li>
-                    <li><a href="#massa" role="tab" data-toggle="tab">Massa</a></li>
-                    <li><a href="#capacidade" role="tab" data-toggle="tab">Capacidade</a></li>
-                    <li><a href="#volume" role="tab" data-toggle="tab">Volume</a></li>
+            <!--Lista de medidas-->
+            <div class="col-xs-2">
+                <ul class="nav nav-tabs dropdowns" role="tablist">
+                    <li class="width-100 dropdown dropdowns">
+                        <a class="dropdown-toggle dropdowns" data-toggle="dropdown" href="#">Medida<b class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="#distancias" role="tab" data-toggle="tab">Distancia</a></li>
+                            <li><a href="#massa" role="tab" data-toggle="tab">Massa</a></li>
+                            <li><a href="#capacidade" role="tab" data-toggle="tab">Capacidade</a></li>
+                            <li><a href="#volume" role="tab" data-toggle="tab">Volume</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-
-        <!--Input 1-->
-        <input type="text" id="valor1" autofocus="autofocus" oninput="v1()">
-        <!--Input 2-->
-        <input type="text" id="valor2" oninput="v2()">
+            </div>
+        </div>
 
 
-        <!--Tab's-->
-        <div class="tab-content">
-            <!--distancias-->
-            <div class="tab-pane active" id="distancias">
-                <div style="display: inline">
-                    <select  id="selecao1" onchange="v1()">
+        <div class="row">
+            <!--Tab's-->
+            <div class="tab-content">
+                <!--distancias-->
+                <div class="tab-pane active" id="distancias">
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao1" onchange="v1()" class="form-control">
                             <option value="1000000">Quilômetro (km)</option>
                             <option value="100000">Hectômetro (hm)</option>
                             <option value="10000">Decâmetro (dam)</option>
@@ -87,10 +103,13 @@
                             <option value="100">Decímetro (dm)</option>
                             <option value="10">Centímetro (cm)</option>
                             <option value="1">Milímetro (ml)</option>
-                    </select>
-                </div>
-                <div style="display: inline">
-                    <select id="selecao2" onchange="v2()">
+                        </select>
+                    </div>
+
+                    <div class="igual"></div>
+
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao2" onchange="v1()" class="form-control">
                             <option value="1000000">Quilômetro (km)</option>
                             <option value="100000">Hectômetro (hm)</option>
                             <option value="10000">Decâmetro (dam)</option>
@@ -98,15 +117,15 @@
                             <option value="100">Decímetro (dm)</option>
                             <option value="10">Centímetro (cm)</option>
                             <option value="1">Milímetro (ml)</option>
-                    </select>
+                        </select>
+                    </div>
                 </div>
-            </div>
 
-            <!--massa-->
-            <div class="tab-pane" id="massa">
+                <!--massa-->
+                <div class="tab-pane" id="massa">
 
-                <div style="display: inline">
-                    <select  id="selecao1" onchange="v1()">
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao1" onchange="v1()" class="form-control">
                             <option value="1000000">Hectograma (hg)</option>
                             <option value="100000">Quilograma (kg)</option>
                             <option value="10000">Decagrama (dag)</option>
@@ -114,10 +133,13 @@
                             <option value="100">Decigrama (dg)</option>
                             <option value="10">Centigrama (cg)</option>
                             <option value="1">Miligrama (mg)</option>
-                    </select>
-                </div>
-                <div style="display: inline">
-                    <select id="selecao2" onchange="v2()">
+                        </select>
+                    </div>
+
+                    <div class="igual"></div>
+
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao2" onchange="v1()" class="form-control">
                             <option value="1000000">Hectograma (hg)</option>
                             <option value="100000">Quilograma (kg)</option>
                             <option value="10000">Decagrama (dag)</option>
@@ -125,16 +147,14 @@
                             <option value="100">Decigrama (dg)</option>
                             <option value="10">Centigrama (cg)</option>
                             <option value="1">Miligrama (mg)</option>
-                    </select>
+                        </select>
+                    </div>
                 </div>
 
-
-            </div>
-
-            <!--capacidade-->
-            <div class="tab-pane" id="capacidade">
-                <div style="display: inline">
-                    <select  id="selecao1" onchange="v1()">
+                <!--capacidade-->
+                <div class="tab-pane" id="capacidade">
+                    <div class="col-xs-2 displayinline">
+                        <s<elect id="selecao1" onchange="v1()" class="form-control">
                             <option value="1000000">Hectolitro (hl)</option>
                             <option value="100000">Quilolitro (kl)</option>
                             <option value="10000">decalitro (dal)</option>
@@ -142,10 +162,13 @@
                             <option value="100">decilitro (dl)</option>
                             <option value="10">centilitro (cl)</option>
                             <option value="1">mililitro (ml)</option>
-                    </select>
-                </div>
-                <div style="display: inline">
-                    <select id="selecao2" onchange="v2()">
+                            </select>
+                    </div>
+
+                    <div class="igual"></div>
+
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao2" onchange="v1()" class="form-control">
                             <option value="1000000">Hectolitro (hl)</option>
                             <option value="100000">Quilolitro (kl)</option>
                             <option value="10000">decalitro (dal)</option>
@@ -153,14 +176,14 @@
                             <option value="100">decilitro (dl)</option>
                             <option value="10">centilitro (cl)</option>
                             <option value="1">mililitro (ml)</option>
-                    </select>
+                        </select>
+                    </div>
                 </div>
-            </div>
 
-            <!--volume-->
-            <div class="tab-pane" id="Volume">
-                <div style="display: inline">
-                    <select  id="selecao1" onchange="v1()">
+                <!--volume-->
+                <div class="tab-pane" id="volume">
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao1" onchange="v1()" class="form-control">
                             <option value="1000000">Hectômetro cúbico (hm3)</option>
                             <option value="100000">Quilômetro cúbico (km3)</option>
                             <option value="10000">Decâmetro cúbico (dam3)</option>
@@ -168,10 +191,13 @@
                             <option value="100">Decímetro cúbico (dm3)</option>
                             <option value="10">Centímetro cúbico (cm3)</option>
                             <option value="1">Milímetro cúbico (mm3)</option>
-                    </select>
-                </div>
-                <div style="display: inline">
-                    <select id="selecao2" onchange="v2()">
+                        </select>
+                    </div>
+
+                    <div class="igual"></div>
+
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao2" onchange="v1()" class="form-control">
                             <option value="1000000">Hectômetro cúbico (hm3)</option>
                             <option value="100000">Quilômetro cúbico (km3)</option>
                             <option value="10000">Decâmetro cúbico (dam3)</option>
@@ -179,12 +205,17 @@
                             <option value="100">Decímetro cúbico (dm3)</option>
                             <option value="10">Centímetro cúbico (cm3)</option>
                             <option value="1">Milímetro cúbico (mm3)</option>
-                    </select>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
 
+
+
+
     </div>
+
 
 </body>
 <script type="text/javascript" src="script/geometria.JS"></script>
