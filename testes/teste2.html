@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Teste2</title>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+
+        /*  function greeting(name) {
+              alert('Hello ' + name);
+          }
+  
+          function processUserInput(callback) {
+              var name = prompt('Please enter your name.');
+              callback(name);
+          }
+  
+           rocessUserInput(greeting); */
+
+
+        // Requisições do tipo GET]
+
+       
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    info: null
+                }
+            },
+            mounted() {
+                axios
+                    .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+                    .then(response => (this.info = response))
+            }
+        })
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <div id="app">
+        {{ info }}
+    </div>
+
+</body>
+
+
+</html>
