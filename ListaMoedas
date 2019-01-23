@@ -1,0 +1,408 @@
+// set endpoint and your access key
+let endpoint = 'latest'
+let access_key = '8cdc3da4f1e5760ecab03e23e85ae383';
+
+let promise = axios.get('http://data.fixer.io/api/latest?access_key=8cdc3da4f1e5760ecab03e23e85ae383&symbols=USD');
+
+var teste = promise.then(
+    (result) => {
+
+        console.table(result.data.rates.);
+
+        document.getElementById('loading').innerHTML = '';
+
+    }
+
+).catch((error) => {
+    console.error(error);
+});
+
+(ValorConverter * converterDe) * converterPara; 
+
+
+
+
+
+
+// set endpoint and your access key
+var endpoint = 'latest'
+var     access_key = '8cdc3da4f1e5760ecab03e23e85ae383';
+
+// get the most recent exchange rates via the "latest" endpoint:
+$.ajax({
+    url: 'http://data.fixer.io/api/' + endpoint + '?access_key=' + access_key,
+    dataType: 'json',
+    success: function (json) {
+        console.table(json.rates);
+
+        //LIsta todsas moedas disponiveis
+        console.log('BRL: ' + json.rates.BRL);
+        console.log('AED: ' + json.rates.AED);
+        console.log('AFN: ' + json.rates.AFN);
+        console.log('ALL: ' + json.rates.ALL);
+        console.log('AMD: ' + json.rates.AMD);
+        console.log('ANG: ' + json.rates.ANG);
+        console.log('AOA: ' + json.rates.AOA);
+        console.log('ARS: ' + json.rates.ARS);
+        console.log('AUD: ' + json.rates.AUD);
+        console.log('AWG: ' + json.rates.AWG);
+        console.log('AZN: ' + json.rates.AZN);
+        console.log('BAM: ' + json.rates.BAM);
+        console.log('BBD: ' + json.rates.BBD);
+        console.log('BDT: ' + json.rates.BDT);
+        console.log('BGN: ' + json.rates.BGN);
+        console.log('BHD: ' + json.rates.BHD);
+        console.log('BIF: ' + json.rates.BIF);
+        console.log('BMD: ' + json.rates.BMD);
+        console.log('BND: ' + json.rates.BND);
+        console.log('BOB: ' + json.rates.BOB);
+        console.log('BRL: ' + json.rates.BRL);
+        console.log('BSD: ' + json.rates.BSD);
+        console.log('BTC: ' + json.rates.BTC);
+        console.log('BTN: ' + json.rates.BTN);
+        console.log('BWP: ' + json.rates.BWP);
+        console.log('BYN: ' + json.rates.BYN);
+        console.log('BYR: ' + json.rates.BYR);
+        console.log('BZD: ' + json.rates.BZD);
+        console.log('CAD: ' + json.rates.CAD);
+        console.log('CDF: ' + json.rates.CDF);
+        console.log('CHF: ' + json.rates.CHF);
+        console.log('CLF: ' + json.rates.CLF);
+        console.log('CLP: ' + json.rates.CLP);
+        console.log('CNY: ' + json.rates.CNY);
+        console.log('COP: ' + json.rates.COP);
+        console.log('CRC: ' + json.rates.CRC);
+        console.log('CUC: ' + json.rates.CUC);
+        console.log('CUP: ' + json.rates.CUP);
+        console.log('CVE: ' + json.rates.CVE);
+        console.log('CZK: ' + json.rates.CZK);
+        console.log('DJF: ' + json.rates.DJF);
+        console.log('DKK: ' + json.rates.DKK);
+        console.log('DOP: ' + json.rates.DOP);
+        console.log('DZD: ' + json.rates.DZD);
+        console.log('EGP: ' + json.rates.EGP);
+        console.log('ERN: ' + json.rates.ERN);
+        console.log('ETB: ' + json.rates.ETB);
+        console.log('EUR: ' + json.rates.EUR);
+        console.log('FJD: ' + json.rates.FJD);
+        console.log('FKP: ' + json.rates.FKP);
+        console.log('GBP: ' + json.rates.GBP);
+        console.log('GEL: ' + json.rates.GEL);
+        console.log('GGP: ' + json.rates.GGP);
+        console.log('GHS: ' + json.rates.GHS);
+        console.log('GIP: ' + json.rates.GIP);
+        console.log('GMD: ' + json.rates.GMD);
+        console.log('GNF: ' + json.rates.GNF);
+        console.log('GTQ: ' + json.rates.GTQ);
+        console.log('GYD: ' + json.rates.GYD);
+        console.log('HKD: ' + json.rates.HKD);
+        console.log('HNL: ' + json.rates.HNL);
+        console.log('HRK: ' + json.rates.HRK);
+        console.log('HTG: ' + json.rates.HTG);
+        console.log('HUF: ' + json.rates.HUF);
+        console.log('IDR: ' + json.rates.IDR);
+        console.log('ILS: ' + json.rates.ILS);
+        console.log('IMP: ' + json.rates.IMP);
+        console.log('INR: ' + json.rates.INR);
+        console.log('IQD: ' + json.rates.IQD);
+        console.log('IRR: ' + json.rates.IRR);
+        console.log('ISK: ' + json.rates.ISK);
+        console.log('JEP: ' + json.rates.JEP);
+        console.log('JMD: ' + json.rates.JMD);
+        console.log('JOD: ' + json.rates.JOD);
+        console.log('JPY: ' + json.rates.JPY);
+        console.log('KES: ' + json.rates.KES);
+        console.log('KGS: ' + json.rates.KGS);
+        console.log('KHR: ' + json.rates.KHR);
+        console.log('KMF: ' + json.rates.KMF);
+        console.log('KPW: ' + json.rates.KPW);
+        console.log('KRW: ' + json.rates.KRW);
+        console.log('KWD: ' + json.rates.KWD);
+        console.log('KYD: ' + json.rates.KYD);
+        console.log('KZT: ' + json.rates.KZT);
+        console.log('LAK: ' + json.rates.LAK);
+        console.log('LBP: ' + json.rates.LBP);
+        console.log('LKR: ' + json.rates.LKR);
+        console.log('LRD: ' + json.rates.LRD);
+        console.log('LSL: ' + json.rates.LSL);
+        console.log('LTL: ' + json.rates.LTL);
+        console.log('LVL: ' + json.rates.LVL);
+        console.log('LYD: ' + json.rates.LYD);
+        console.log('MAD: ' + json.rates.MAD);
+        console.log('MDL: ' + json.rates.MDL);
+        console.log('MGA: ' + json.rates.MGA);
+        console.log('MKD: ' + json.rates.MKD);
+        console.log('MMK: ' + json.rates.MMK);
+        console.log('MNT: ' + json.rates.MNT);
+        console.log('MOP: ' + json.rates.MOP);
+        console.log('MRO: ' + json.rates.MRO);
+        console.log('MUR: ' + json.rates.MUR);
+        console.log('MVR: ' + json.rates.MVR);
+        console.log('MWK: ' + json.rates.MWK);
+        console.log('MXN: ' + json.rates.MXN);
+        console.log('MYR: ' + json.rates.MYR);
+        console.log('MZN: ' + json.rates.MZN);
+        console.log('NAD: ' + json.rates.NAD);
+        console.log('NGN: ' + json.rates.NGN);
+        console.log('NIO: ' + json.rates.NIO);
+        console.log('NOK: ' + json.rates.NOK);
+        console.log('NPR: ' + json.rates.NPR);
+        console.log('NZD: ' + json.rates.NZD);
+        console.log('OMR: ' + json.rates.OMR);
+        console.log('PAB: ' + json.rates.PAB);
+        console.log('PEN: ' + json.rates.PEN);
+        console.log('PGK: ' + json.rates.PGK);
+        console.log('PHP: ' + json.rates.PHP);
+        console.log('PKR: ' + json.rates.PKR);
+        console.log('PLN: ' + json.rates.PLN);
+        console.log('PYG: ' + json.rates.PYG);
+        console.log('QAR: ' + json.rates.QAR);
+        console.log('RON: ' + json.rates.RON);
+        console.log('RSD: ' + json.rates.RSD);
+        console.log('RUB: ' + json.rates.RUB);
+        console.log('RWF: ' + json.rates.RWF);
+        console.log('SAR: ' + json.rates.SAR);
+        console.log('SBD: ' + json.rates.SBD);
+        console.log('SCR: ' + json.rates.SCR);
+        console.log('SDG: ' + json.rates.SDG);
+        console.log('SEK: ' + json.rates.SEK);
+        console.log('SGD: ' + json.rates.SGD);
+        console.log('SHP: ' + json.rates.SHP);
+        console.log('SLL: ' + json.rates.SLL);
+        console.log('SOS: ' + json.rates.SOS);
+        console.log('SRD: ' + json.rates.SRD);
+        console.log('STD: ' + json.rates.STD);
+        console.log('SVC: ' + json.rates.SVC);
+        console.log('SYP: ' + json.rates.SYP);
+        console.log('SZL: ' + json.rates.SZL);
+        console.log('THB: ' + json.rates.THB);
+        console.log('TJS: ' + json.rates.TJS);
+        console.log('TMT: ' + json.rates.TMT);
+        console.log('TND: ' + json.rates.TND);
+        console.log('TOP: ' + json.rates.TOP);
+        console.log('TRY: ' + json.rates.TRY);
+        console.log('TTD: ' + json.rates.TTD);
+        console.log('TWD: ' + json.rates.TWD);
+        console.log('TZS: ' + json.rates.TZS);
+        console.log('UAH: ' + json.rates.UAH);
+        console.log('UGX: ' + json.rates.UGX);
+        console.log('USD: ' + json.rates.USD);
+        console.log('UYU: ' + json.rates.UYU);
+        console.log('UZS: ' + json.rates.UZS);
+        console.log('VEF: ' + json.rates.VEF);
+        console.log('VND: ' + json.rates.VND);
+        console.log('VUV: ' + json.rates.VUV);
+        console.log('WST: ' + json.rates.WST);
+        console.log('XAF: ' + json.rates.XAF);
+        console.log('XAG: ' + json.rates.XAG);
+        console.log('XAU: ' + json.rates.XAU);
+        console.log('XCD: ' + json.rates.XCD);
+        console.log('XDR: ' + json.rates.XDR);
+        console.log('XOF: ' + json.rates.XOF);
+        console.log('XPF: ' + json.rates.XPF);
+        console.log('YER: ' + json.rates.YER);
+        console.log('ZAR: ' + json.rates.ZAR);
+        console.log('ZMK: ' + json.rates.ZMK);
+        console.log('ZMW: ' + json.rates.ZMW);
+        console.log('ZWL: ' + json.rates.ZWL);
+
+
+        // timestamp can be accessed in json.timestamp
+        console.log('\n \n Time: ' + json.timestamp);
+
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"success":true,
+"timestamp":1548257646,
+"base": "EUR",
+"date":"2019-01-23",
+"rates":{
+    "AED":4.176412,
+    "AFN":85.675551,
+    "ALL":124.852299,
+    "AMD":551.544815,
+    "ANG":2.029848,
+    "AOA":352.968499,
+    "ARS":42.711508,
+    "AUD":1.59494,
+    "AWG":2.046676,
+    "AZN":1.938694,
+    "BAM":1.956965,
+    "BBD":2.276131,
+    "BDT":95.433035,
+    "BGN":1.956224,
+    "BHD":0.428722,
+    "BIF":2063.731203,
+    "BMD":1.137042,
+    "BND":1.791861,
+    "BOB":7.857699,
+    "BRL":4.325365,
+    "BSD":1.137042,
+    "BTC":0.000317,
+    "BTN":80.986335,
+    "BWP":11.970744,
+    "BYN":2.448278,
+    "BYR":22286.022911,
+    "BZD":2.292282,
+    "CAD":1.518991,
+    "CDF":1854.514982,
+    "CHF":1.133261,
+    "CLF":0.02848,
+    "CLP":765.229145,
+    "CNY":7.722222,
+    "COP":3573.495551,
+    "CRC":683.896901,
+    "CUC":1.137042,
+    "CUP":30.131613,
+    "CVE":110.724581,
+    "CZK":25.690892,
+    "DJF":202.074988,
+    "DKK":7.467239,
+    "DOP":57.494539,
+    "DZD":134.830636,
+    "EGP":20.346283,
+    "ERN":17.056045,
+    "ETB":32.420467,
+    "EUR":1,
+    "FJD":2.423435,
+    "FKP":0.875557,
+    "GBP":0.870332,
+    "GEL":3.018816,
+    "GGP":0.870583,
+    "GHS":5.611306,
+    "GIP":0.875476,
+    "GMD":56.328793,
+    "GNF":10449.415828,
+    "GTQ":8.78638,
+    "GYD":237.721014,
+    "HKD":8.921344,
+    "HNL":27.823157,
+    "HRK":7.432506,
+    "HTG":89.271432,
+    "HUF":318.043195,
+    "IDR":16101.651553,
+    "ILS":4.183836,
+    "IMP":0.870583,
+    "INR":80.985827,
+    "IQD":1353.079962,
+    "IRR":47875.15247,
+    "ISK":137.010354,
+    "JEP":0.870583,
+    "JMD":150.067108,
+    "JOD":0.806729,
+    "JPY":124.80746,
+    "KES":115.204928,
+    "KGS":79.368535,
+    "KHR":4566.361274,
+    "KMF":492.913624,
+    "KPW":1023.399369,
+    "KRW":1282.321709,
+    "KWD":0.344865,
+    "KYD":0.947736,
+    "KZT":430.07432,
+    "LAK":9733.079774,
+    "LBP":1719.664991,
+    "LKR":207.157663,
+    "LRD":181.926905,
+    "LSL":15.793868,
+    "LTL":3.357389,
+    "LVL":0.687785,
+    "LYD":1.586201,
+    "MAD":10.877341,
+    "MDL":19.468408,
+    "MGA":4104.721105,
+    "MKD":61.496876,
+    "MMK":1742.687669,
+    "MNT":3001.322142,
+    "MOP":9.189626,
+    "MRO":405.92445,
+    "MUR":39.06137,
+    "MVR":17.680758,
+    "MWK":828.32847,
+    "MXN":21.742971,
+    "MYR":4.703489,
+    "MZN":70.297619,
+    "NAD":15.79371,
+    "NGN":412.746136,
+    "NIO":37.03355,
+    "NOK":9.772478,
+    "NPR":129.742153,
+    "NZD":1.676681,
+    "OMR":0.437755,
+    "PAB":1.137258,
+    "PEN":3.791523,
+    "PGK":3.820514,
+    "PHP":59.921548,
+    "PKR":159.02692,
+    "PLN":4.288433,
+    "PYG":6888.311262,
+    "QAR":4.140088,
+    "RON":4.756531,
+    "RSD":118.514564,
+    "RUB":75.291544,
+    "RWF":1002.871031,
+    "SAR":4.264078,
+    "SBD":9.179227,
+    "SCR":15.475058,
+    "SDG":54.151652,
+    "SEK":10.257813,
+    "SGD":1.546039,
+    "SHP":1.501921,
+    "SLL":9750.134857,
+    "SOS":659.484378,
+    "SRD":8.480048,
+    "STD":23935.415572,
+    "SVC":9.950703,
+    "SYP":585.576861,
+    "SZL":15.793379,
+    "THB":36.090281,
+    "TJS":10.735267,
+    "TMT":3.991017,
+    "TND":3.371673,
+    "TOP":2.5729,
+    "TRY":6.031081,
+    "TTD":7.713863,
+    "TWD":35.105066,
+    "TZS":2632.251922,
+    "UAH":31.718973,
+    "UGX":4198.509067,
+    "USD":1.137042,
+    "UYU":37.124603,
+    "UZS":9499.985966,
+    "VEF":11.356209,
+    "VND":26374.257369,
+    "VUV":129.744684,
+    "WST":2.967184,
+    "XAF":656.335082,
+    "XAG":0.074316,
+    "XAU":0.000887,
+    "XCD":3.072913,
+    "XDR":0.816683,
+    "XOF":664.605742,
+    "XPF":119.841583,
+    "YER":284.65816,
+    "ZAR":15.76146,
+    "ZMK":10234.741292,
+    "ZMW":13.594513,
+    "ZWL":366.531182}}
