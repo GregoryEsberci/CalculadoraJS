@@ -1,25 +1,31 @@
 document.getElementById('calcular').addEventListener('click', function () {
-    var n1 = +document.getElementById('n1').value;
-    var n2 = +document.getElementById('n2').value;
+    let input1 = +document.getElementById('input1').value.replace(',','.');
+    let input2 = +document.getElementById('input2').value.replace(',','.');
+    let resultado = 0;
 
-    document.getElementById('resultado').innerHTML = null;
     var operacao = document.getElementById('operacao').value;
 
     if (operacao == 'soma') {
-        document.getElementById('resultado').innerHTML = n1 + n2;
+        resultado = input1 + input2;
     }
 
     else if (operacao == 'subtrair') {
-        document.getElementById('resultado').innerHTML = n1 - n2 ;
+        resultado = input1 - input2;
     }
 
     else if (operacao == 'multiplicar') {
-        document.getElementById('resultado').innerHTML = n1 * n2;
+        resultado = input1 * input2;
     }
 
     else {
-        document.getElementById('resultado').innerHTML = n1 / n2;
+        resultado = input1 / input2;
     }
+
+    if (resultado % 1 != 0) {
+        resultado = resultado.toFixed(2).replace('.',',');
+    }
+    
+    document.getElementById('resultado').innerHTML = resultado;
 });
 
 

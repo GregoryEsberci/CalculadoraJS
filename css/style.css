@@ -6,8 +6,17 @@ body {
     float: left;
 }
 
+.floatright {
+    float: right;
+}
+
 .margin-t-20 {
     margin-top: 20px;
+}
+
+
+.margin-t-40 {
+    margin-top: 40px;
 }
 
 .displayinline {
@@ -27,6 +36,10 @@ body {
 
 .width-100 {
     width: 100%;
+}
+
+.margin-b-0{
+margin-bottom: 0;
 }
 
 .dropdowns{

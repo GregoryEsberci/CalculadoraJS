@@ -1,4 +1,4 @@
-<html>
+o<html>
 
 <head>
     <title>Geometria</title>
@@ -25,18 +25,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <style>
-
-        .configspan{
-            padding-top: 30px; 
-        }
         
         .configspan span {
             font-size: 16px;
-            line-height: 180%
+            line-height: 180%;
+            margin: 10px;
         }
 
-
-
+        input{
+            margin-bottom: 4%; 
+        }
     </style>
 </head>
 
@@ -51,7 +49,7 @@
                 <li><a href="bhaskara.html">Bhaskara</a></li>
                 <li><a href="geometria.html">Geometria</a></li>
                 <li><a href="conversor.html">Conversor</a></li>
-                <li><a href="financeiro.html">Financeiro</a></li>
+                <li><a href="conversorDeMoedas.html">Conversor de moedas</a></li>
                 <li><a href="fibonacci.html">Fibonacci</a></li>
             </ul>
         </nav>
@@ -94,37 +92,43 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="col-xs-9 configspan bold">
+                    <span id="area"></span>
+                    <span id="perimetro"></span>
+                    <span id="volume"></span>
+                </div>
         </div>
 
 
-        <div class="tab-content col-xs-3" style="padding-left: 0px">
+        <div class="tab-content col-xs-3 input" style="padding-left: 0px">
             <!--Quadrado-->
             <div class="tab-pane " id="quadrado">
                 <div class="displayinline">
                     <label for="ladoQuadrado">Lado:</label>
-                    <input type="text" id="ladoQuadrado">
+                    <input type="text" class="form-control" id="ladoQuadrado">
 
                     <label for="profundidadeQuadrado">Profundidade</label>
-                    <input type="text" id="profundidadeQuadrado">
+                    <input type="text" class="form-control" id="profundidadeQuadrado">
 
-                    <button onclick="quadrado()">Enviar</button>
+                    <button class="btn btn-primary" onclick="quadrado()">Enviar</button>
                 </div>
             </div>
 
             <!--Retangulo-->
             <div class="tab-pane " id="retangulo">
-                <div class="col-xs-2 displayinline">
+                <div class="displayinline">
 
                     <label for="LadoRetanguno">Lado:</label>
-                    <input type="text" id="LadoRetanguno">
+                    <input type="text" class="form-control" id="LadoRetanguno">
 
                     <label for="BaseRetanguno">Base:</label>
-                    <input type="text" id="BaseRetanguno">
+                    <input type="text" class="form-control" id="BaseRetanguno">
 
                     <label for="ProfundidadeRetanguno">Profundidade</label>
-                    <input type="text" id="ProfundidadeRetanguno">
+                    <input type="text" class="form-control" id="ProfundidadeRetanguno">
 
-                    <button onclick="retangulo()">Enviar</button>
+                    <button class="btn btn-primary" onclick="retangulo()">Enviar</button>
                 </div>
             </div>
 
@@ -132,69 +136,64 @@
 
             <!--Equilatero-->
             <div class="tab-pane " id="equilatero">
-                <div class="col-xs-2 displayinline">
+                <div class="displayinline">
 
                     <label for="AlturaEquilatero">Altura:</label>
-                    <input type="text" id="AlturaEquilatero">
+                    <input type="text" class="form-control" id="AlturaEquilatero">
 
                     <label for="BaseREquilatero">Base:</label>
-                    <input type="text" id="BaseEquilatero">
+                    <input type="text" class="form-control" id="BaseEquilatero">
 
                     <label for="ProfundidadeEquilatero">Profundidade</label>
-                    <input type="text" id="ProfundidadeEquilatero">
+                    <input type="text" class="form-control" id="ProfundidadeEquilatero">
 
-                    <button onclick="equilatero()">Enviar</button>
+                    <button class="btn btn-primary" onclick="equilatero()">Enviar</button>
                 </div>
             </div>
 
             <!--Isosceles-->
             <div class="tab-pane " id="isosceles">
-                <div class="col-xs-2 displayinline">
+                <div class="displayinline">
 
                     <label for="AlturaIsosceles">Altura:</label>
-                    <input type="text" id="AlturaIsosceles">
+                    <input type="text" class="form-control" id="AlturaIsosceles">
 
                     <label for="BaseIsosceles">Base:</label>
-                    <input type="text" id="BaseIsosceles">
+                    <input type="text" class="form-control" id="BaseIsosceles">
 
                     <label for="ProfundidadeEquilatero">Profundidade</label>
-                    <input type="text" id="ProfundidadeIsosceles">
+                    <input type="text" class="form-control" id="ProfundidadeIsosceles">
 
-                    <button onclick="isosceles()">Enviar</button>
+                    <button class="btn btn-primary" onclick="isosceles()">Enviar</button>
                 </div>
             </div>
 
             <!--TrianguloRetangulo-->
             <div class="tab-pane " id="TrianguloRetangulo">
-                <div class="col-xs-2 displayinline">
+                <div class="displayinline">
 
                     <label for="AlturaTrianguloRetangulo">Altura:</label>
-                    <input type="text" id="AlturaTrianguloRetangulo">
+                    <input type="text" class="form-control" id="AlturaTrianguloRetangulo">
 
                     <label for="BaseTrianguloRetangulo">Base:</label>
-                    <input type="text" id="BaseTrianguloRetangulo">
+                    <input type="text" class="form-control" id="BaseTrianguloRetangulo">
 
                     <label for="ProfundidadeTrianguloRetangulo">Profundidade</label>
-                    <input type="text" id="ProfundidadeTrianguloRetangulo">
+                    <input type="text" class="form-control" id="ProfundidadeTrianguloRetangulo">
 
-                    <button onclick="TrianguloRetangulo()">Enviar</button>
+                    <button class="btn btn-primary" onclick="TrianguloRetangulo()">Enviar</button>
                 </div>
             </div>
 
 
             <!--Circulo-->
             <div class="tab-pane " id="circulo">
-                <div class="col-xs-2 displayinline">
-                    <label for="RaioCirculo">Altura:</label>
-                    <input type="text" id="RaioCirculo">
-                    <button onclick="circulo()">Enviar</button>
+                <div class="displayinline">
+                    <label for="RaioCirculo">Raio:</label>
+                    <input type="text" class="form-control" id="RaioCirculo">
+                    <button class="btn btn-primary" onclick="circulo()">Enviar</button>
                 </div>
             </div>
-        </div>
-        <div class="col-xs-9 configspan bold">
-            <span id="resultado1"></span><br>
-            <span id="resultado2"></span><br>
-            <span id="resultado3"></span><br>
         </div>
     </div>
 </body>

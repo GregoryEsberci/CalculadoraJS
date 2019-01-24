@@ -1,7 +1,7 @@
-c<html>
+<html>
 
 <head>
-    <title>Titulo</title>
+    <title>Conversor de moedas</title>
     <meta charset="utf-8">
 
     <!--getbootstrap-->
@@ -27,6 +27,13 @@ c<html>
 
     <style>
 
+        .igual{
+    padding-left: 2%;
+}
+
+.btn{
+    margin-bottom: 10px;
+}
     </style>
 </head>
 
@@ -41,7 +48,7 @@ c<html>
                 <li><a href="bhaskara.html">Bhaskara</a></li>
                 <li><a href="geometria.html">Geometria</a></li>
                 <li><a href="conversor.html">Conversor</a></li>
-                <li><a href="financeiro.html">Financeiro</a></li>
+                <li><a href="conversorDeMoedas.html">Conversor de moedas</a></li>
                 <li><a href="fibonacci.html">Fibonacci</a></li>
             </ul>
         </nav>
@@ -51,13 +58,19 @@ c<html>
 
 
 
-        <h1 class="textcenter">Titulo</h1>
+        <h1 class="textcenter">Conversor de moedas</h1>
         <h2 id="loading">Carregando...</h2>
         <hr>
 
+
         <div class="col-xs-6">
-            <div class="col-xs-3">
-                <input id="ValorConverter">
+
+            <div class="col-xs-3 padding-l-0 padding-r-0 font">
+                <button id="run" class="btn btn-primary">Converter</button>
+                <p class=" margin-b-0">Converter De:</p>
+            </div>
+            <div class="col-xs-3 padding-l-0">
+                <input id="ValorConverter" class="form-control">
                 <select id="converterDe" class="form-control">
                     <option value="AED">AED</option>
                     <option value="AFN">AFN</option>
@@ -234,9 +247,20 @@ c<html>
 
 
                 </select>
+
             </div>
+
+            <div class="igual">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="col-xs-1  padding-l-0 padding-r-0 font margin-t-40">
+                <p class=" margin-b-0">Para: </p>
+            </div>
+
             <div class="col-xs-3">
-            
+
+                <input type="text" id="valorResultado" class="form-control" disabled style="background-color:white">
                 <select id="converterPara" class="form-control ">
                     <option value="AED">AED</option>
                     <option value="AFN">AFN</option>
@@ -408,19 +432,16 @@ c<html>
                     <option value="ZWL">ZWL</option>
                 </select>
             </div>
-            
-            <span id="ValorResultado"></span>
-            <button id="run">Run</button>
+
+
         </div>
         <div class="col-xs-6">
-            <ul class="list-unstyled">
-                <li></li>
-            </ul>
+            <p id='exibir'></p>
         </div>
     </div>
 
 </body>
 
-<script type="text/javascript" src="script/financeiro.JS"></script>
+<script type="text/javascript" src="script/conversorDeMoedas.JS"></script>
 
 </html>
