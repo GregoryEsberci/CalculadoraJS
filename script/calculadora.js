@@ -1,9 +1,9 @@
 document.getElementById('calcular').addEventListener('click', function () {
-    let input1 = +document.getElementById('input1').value.replace(',','.');
-    let input2 = +document.getElementById('input2').value.replace(',','.');
-    let resultado = 0;
+    let  input1 = +document.getElementById('input1').value.replace(',','.');
+    let  input2 = +document.getElementById('input2').value.replace(',','.');
+    let  resultado = 0;
 
-    var operacao = document.getElementById('operacao').value;
+    let operacao = document.getElementById('operacao').value;
 
     if (operacao == 'soma') {
         resultado = input1 + input2;

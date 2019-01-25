@@ -1,12 +1,12 @@
 document.getElementById('acao').addEventListener('click', () => {
 
-    var a = +document.getElementById('a').value.replace(',', '.');
-    var b = +document.getElementById('b').value.replace(',', '.');
-    var c = +document.getElementById('c').value.replace(',', '.');
-    var x1 = 0;
-    var x2 = 0;
+    let a = +document.getElementById('a').value.replace(',', '.');
+    let b = +document.getElementById('b').value.replace(',', '.');
+    let c = +document.getElementById('c').value.replace(',', '.');
+    let x1 = 0;
+    let x2 = 0;
 
-    var delta = Math.pow(b, 2) - 4 * a * c;
+    let delta = Math.pow(b, 2) - 4 * a * c;
 
 
     if (delta >= 0) {
