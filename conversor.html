@@ -56,7 +56,7 @@
         <div class="row">
             <!--Input 1-->
             <div class="col-xs-2">
-                <input type="text" id="valor1" autofocus="autofocus" oninput="v1()" class="form-control">
+                <input type="text" id="valorConverter" autofocus="autofocus" oninput="converter()" class="form-control">
             </div>
 
 
@@ -67,9 +67,9 @@
                 <div></div>
             </div>
 
-            <!--Input 2-->
+            <!--Resultado-->
             <div class="col-xs-2">
-                <input type="text" id="valor2" oninput="v2()" class="form-control">
+                <span type="text" id="resultado"  class="form-control"></span>
             </div>
 
             <!--Lista de medidas-->
@@ -95,7 +95,7 @@
                 <!--distancias-->
                 <div class="tab-pane active" id="distancias">
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao1" onchange="v1()" class="form-control">
+                        <select id="selecao1" onchange="converter()" class="form-control">
                             <option value="1000000">Quilômetro (km)</option>
                             <option value="100000">Hectômetro (hm)</option>
                             <option value="10000">Decâmetro (dam)</option>
@@ -109,7 +109,7 @@
                     <div class="igual"></div>
 
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="v1()" class="form-control">
+                        <select id="selecao2" onchange="converter()" class="form-control">
                             <option value="1000000">Quilômetro (km)</option>
                             <option value="100000">Hectômetro (hm)</option>
                             <option value="10000">Decâmetro (dam)</option>
@@ -125,7 +125,7 @@
                 <div class="tab-pane" id="massa">
 
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao1" onchange="v1()" class="form-control">
+                        <select id="selecao1" onchange="converter()" class="form-control">
                             <option value="1000000">Hectograma (hg)</option>
                             <option value="100000">Quilograma (kg)</option>
                             <option value="10000">Decagrama (dag)</option>
@@ -139,7 +139,7 @@
                     <div class="igual"></div>
 
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="v1()" class="form-control">
+                        <select id="selecao2" onchange="converter()" class="form-control">
                             <option value="1000000">Hectograma (hg)</option>
                             <option value="100000">Quilograma (kg)</option>
                             <option value="10000">Decagrama (dag)</option>
@@ -154,7 +154,7 @@
                 <!--capacidade-->
                 <div class="tab-pane" id="capacidade">
                     <div class="col-xs-2 displayinline">
-                        <s<elect id="selecao1" onchange="v1()" class="form-control">
+                        <select id="selecao1" onchange="converter()" class="form-control">
                             <option value="1000000">Hectolitro (hl)</option>
                             <option value="100000">Quilolitro (kl)</option>
                             <option value="10000">decalitro (dal)</option>
@@ -168,7 +168,7 @@
                     <div class="igual"></div>
 
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="v1()" class="form-control">
+                        <select id="selecao2" onchange="converter()" class="form-control">
                             <option value="1000000">Hectolitro (hl)</option>
                             <option value="100000">Quilolitro (kl)</option>
                             <option value="10000">decalitro (dal)</option>
@@ -183,7 +183,7 @@
                 <!--volume-->
                 <div class="tab-pane" id="volume">
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao1" onchange="v1()" class="form-control">
+                        <select id="selecao1" onchange="converter()" class="form-control">
                             <option value="1000000">Hectômetro cúbico (hm3)</option>
                             <option value="100000">Quilômetro cúbico (km3)</option>
                             <option value="10000">Decâmetro cúbico (dam3)</option>
@@ -197,7 +197,7 @@
                     <div class="igual"></div>
 
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="v1()" class="form-control">
+                        <select id="selecao2" onchange="converter()" class="form-control">
                             <option value="1000000">Hectômetro cúbico (hm3)</option>
                             <option value="100000">Quilômetro cúbico (km3)</option>
                             <option value="10000">Decâmetro cúbico (dam3)</option>
@@ -218,6 +218,6 @@
 
 
 </body>
-<script type="text/javascript" src="script/geometria.JS"></script>
+<script type="text/javascript" src="script/conversor.JS"></script>
 
 </html>
