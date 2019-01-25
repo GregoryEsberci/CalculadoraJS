@@ -1,3 +1,7 @@
+<!-- O bug esta sendo causado por causa que o JS so esta detectando o primeiro seletor1 e seletor2, para funcionar corretamento vou ter que trocar os 'nomes' -->
+
+
+
 <html>
 
 <head>
@@ -82,6 +86,7 @@
                             <li><a href="#massa" role="tab" data-toggle="tab">Massa</a></li>
                             <li><a href="#capacidade" role="tab" data-toggle="tab">Capacidade</a></li>
                             <li><a href="#volume" role="tab" data-toggle="tab">Volume</a></li>
+                            <li><a href="#area" role="tab" data-toggle="tab">Área</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -205,6 +210,35 @@
                             <option value="100">Decímetro cúbico (dm3)</option>
                             <option value="10">Centímetro cúbico (cm3)</option>
                             <option value="1">Milímetro cúbico (mm3)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--area-->
+                <div class="tab-pane" id="area">
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao1" onchange="converter()" class="form-control">
+                            <option value="1000000000000">Quilômetro quadrado (km²)</option>
+                            <option value="10000000000">Hectômetro quadrado (hm²)</option>
+                            <option value="100000000">Decâmetro quadrado (dam²)</option>
+                            <option value="1000000">Metro quadrado (m²)</option>
+                            <option value="10000">Decímetro quadrado (dm²)</option>
+                            <option value="100">Centímetro quadrado (cm²)</option>
+                            <option value="1">Milímetro quadrado (mm²)</option>
+                        </select>
+                    </div>
+
+                    <div class="igual"></div>
+
+                    <div class="col-xs-2 displayinline">
+                        <select id="selecao2" onchange="converter()" class="form-control">
+                            <option value="1000000000000">Quilômetro quadrado (km²)</option>
+                            <option value="10000000000">Hectômetro quadrado (hm²)</option>
+                            <option value="100000000">Decâmetro quadrado (dam²)</option>
+                            <option value="1000000">Metro quadrado (m²)</option>
+                            <option value="10000">Decímetro quadrado (dm²)</option>
+                            <option value="100">Centímetro quadrado (cm²)</option>
+                            <option value="1">Milímetro quadrado (mm²)</option>
                         </select>
                     </div>
                 </div>

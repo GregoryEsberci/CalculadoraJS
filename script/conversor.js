@@ -1,7 +1,7 @@
 function converter() {
-    let  selecao1 = document.getElementById('selecao1').value;
-    let  selecao2 = document.getElementById('selecao2').value;
-    let  valorConverter = document.getElementById('valorConverter').value.replace(',', '.');
+    let  selecao1 = +document.getElementById('selecao1').value;
+    let  selecao2 = +document.getElementById('selecao2').value;
+    let  valorConverter = +document.getElementById('valorConverter').value.replace(',', '.');
     let  medidaConverter = 0;
     let  resultado = 0;
 
@@ -14,4 +14,6 @@ function converter() {
     }
 
     document.getElementById('resultado').innerHTML = resultado;
+
+    medidaConverter = 0;
 }

@@ -228,21 +228,13 @@ let  converterPara = document.getElementById('converterPara');
 let  converterDe = document.getElementById('converterDe');
 
 siglasMoedas.forEach((siglas) => {
-    let option = document.createElement('option');
-    option.text = siglas;
-    option.value = siglas;
-    converterPara.add(option);
+    let optionPara = document.createElement('option');
+    optionPara.text = siglas;
+    optionPara.value = siglas;
+    converterPara.add(optionPara);
+
+    let optionDe = document.createElement('option');
+    optionDe.text = siglas;
+    optionDe.value = siglas;
+    converterDe.add(optionDe);
 });
-
-siglasMoedas.forEach((siglas) => {
-    let option = document.createElement('option');
-    option.text = siglas;
-    option.value = siglas;
-    converterDe.add(option);
-});
-
-
-
-
-
-
