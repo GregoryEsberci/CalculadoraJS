@@ -1,4 +1,5 @@
-<!-- O bug esta sendo causado por causa que o JS so esta detectando o primeiro seletor1 e seletor2, para funcionar corretamento vou ter que trocar os 'nomes' -->
+<!-- O bug esta sendo causado por causa que o JS so esta detectando o primeiro 
+    seletor1 e seletor2, para funcionar corretamento vou ter que trocar os 'nomes' -->
 
 
 
@@ -73,23 +74,18 @@
 
             <!--Resultado-->
             <div class="col-xs-2">
-                <span type="text" id="resultado"  class="form-control"></span>
+                <span type="text" id="resultado" class="form-control"></span>
             </div>
 
             <!--Lista de medidas-->
             <div class="col-xs-2">
-                <ul class="nav nav-tabs dropdowns" role="tablist">
-                    <li class="width-100 dropdown dropdowns">
-                        <a class="dropdown-toggle dropdowns" data-toggle="dropdown" href="#">Medida<b class="caret"></b></a>
-                        <ul class="dropdown-menu ">
-                            <li><a href="#distancias" role="tab" data-toggle="tab">Distancia</a></li>
-                            <li><a href="#massa" role="tab" data-toggle="tab">Massa</a></li>
-                            <li><a href="#capacidade" role="tab" data-toggle="tab">Capacidade</a></li>
-                            <li><a href="#volume" role="tab" data-toggle="tab">Volume</a></li>
-                            <li><a href="#area" role="tab" data-toggle="tab">Área</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <select id="medida" class="form-control" onchange="listas()">
+                    <option value="distancia">Distancia</option>
+                    <option value="massa">Massa</option>
+                    <option value="capacidade">Capacidade</option>
+                    <option value="volume">Volume</option>
+                    <option value="area">Área</option>
+                </select>
             </div>
         </div>
 
@@ -97,157 +93,30 @@
         <div class="row">
             <!--Tab's-->
             <div class="tab-content">
-                <!--distancias-->
+
+                <!--seletores-->
                 <div class="tab-pane active" id="distancias">
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao1" onchange="converter()" class="form-control">
-                            <option value="1000000">Quilômetro (km)</option>
-                            <option value="100000">Hectômetro (hm)</option>
-                            <option value="10000">Decâmetro (dam)</option>
-                            <option value="1000">Metro (m)</option>
-                            <option value="100">Decímetro (dm)</option>
-                            <option value="10">Centímetro (cm)</option>
-                            <option value="1">Milímetro (ml)</option>
+                        <select id="converterDe" onchange="converter()" class="form-control">
                         </select>
                     </div>
 
                     <div class="igual"></div>
 
                     <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="converter()" class="form-control">
-                            <option value="1000000">Quilômetro (km)</option>
-                            <option value="100000">Hectômetro (hm)</option>
-                            <option value="10000">Decâmetro (dam)</option>
-                            <option value="1000">Metro (m)</option>
-                            <option value="100">Decímetro (dm)</option>
-                            <option value="10">Centímetro (cm)</option>
-                            <option value="1">Milímetro (ml)</option>
+                        <select id="converterPara" onchange="converter()" class="form-control">
                         </select>
                     </div>
                 </div>
 
-                <!--massa-->
-                <div class="tab-pane" id="massa">
 
-                    <div class="col-xs-2 displayinline">
-                        <select id="selecao1" onchange="converter()" class="form-control">
-                            <option value="1000000">Hectograma (hg)</option>
-                            <option value="100000">Quilograma (kg)</option>
-                            <option value="10000">Decagrama (dag)</option>
-                            <option value="1000">Grama (g)</option>
-                            <option value="100">Decigrama (dg)</option>
-                            <option value="10">Centigrama (cg)</option>
-                            <option value="1">Miligrama (mg)</option>
-                        </select>
-                    </div>
 
-                    <div class="igual"></div>
 
-                    <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="converter()" class="form-control">
-                            <option value="1000000">Hectograma (hg)</option>
-                            <option value="100000">Quilograma (kg)</option>
-                            <option value="10000">Decagrama (dag)</option>
-                            <option value="1000">Grama (g)</option>
-                            <option value="100">Decigrama (dg)</option>
-                            <option value="10">Centigrama (cg)</option>
-                            <option value="1">Miligrama (mg)</option>
-                        </select>
-                    </div>
-                </div>
 
-                <!--capacidade-->
-                <div class="tab-pane" id="capacidade">
-                    <div class="col-xs-2 displayinline">
-                        <select id="selecao1" onchange="converter()" class="form-control">
-                            <option value="1000000">Hectolitro (hl)</option>
-                            <option value="100000">Quilolitro (kl)</option>
-                            <option value="10000">decalitro (dal)</option>
-                            <option value="1000">litro (l)</option>
-                            <option value="100">decilitro (dl)</option>
-                            <option value="10">centilitro (cl)</option>
-                            <option value="1">mililitro (ml)</option>
-                            </select>
-                    </div>
 
-                    <div class="igual"></div>
 
-                    <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="converter()" class="form-control">
-                            <option value="1000000">Hectolitro (hl)</option>
-                            <option value="100000">Quilolitro (kl)</option>
-                            <option value="10000">decalitro (dal)</option>
-                            <option value="1000">litro (l)</option>
-                            <option value="100">decilitro (dl)</option>
-                            <option value="10">centilitro (cl)</option>
-                            <option value="1">mililitro (ml)</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!--volume-->
-                <div class="tab-pane" id="volume">
-                    <div class="col-xs-2 displayinline">
-                        <select id="selecao1" onchange="converter()" class="form-control">
-                            <option value="1000000">Hectômetro cúbico (hm3)</option>
-                            <option value="100000">Quilômetro cúbico (km3)</option>
-                            <option value="10000">Decâmetro cúbico (dam3)</option>
-                            <option value="1000">Metro cúbico (m3)</option>
-                            <option value="100">Decímetro cúbico (dm3)</option>
-                            <option value="10">Centímetro cúbico (cm3)</option>
-                            <option value="1">Milímetro cúbico (mm3)</option>
-                        </select>
-                    </div>
-
-                    <div class="igual"></div>
-
-                    <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="converter()" class="form-control">
-                            <option value="1000000">Hectômetro cúbico (hm3)</option>
-                            <option value="100000">Quilômetro cúbico (km3)</option>
-                            <option value="10000">Decâmetro cúbico (dam3)</option>
-                            <option value="1000">Metro cúbico (m3)</option>
-                            <option value="100">Decímetro cúbico (dm3)</option>
-                            <option value="10">Centímetro cúbico (cm3)</option>
-                            <option value="1">Milímetro cúbico (mm3)</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!--area-->
-                <div class="tab-pane" id="area">
-                    <div class="col-xs-2 displayinline">
-                        <select id="selecao1" onchange="converter()" class="form-control">
-                            <option value="1000000000000">Quilômetro quadrado (km²)</option>
-                            <option value="10000000000">Hectômetro quadrado (hm²)</option>
-                            <option value="100000000">Decâmetro quadrado (dam²)</option>
-                            <option value="1000000">Metro quadrado (m²)</option>
-                            <option value="10000">Decímetro quadrado (dm²)</option>
-                            <option value="100">Centímetro quadrado (cm²)</option>
-                            <option value="1">Milímetro quadrado (mm²)</option>
-                        </select>
-                    </div>
-
-                    <div class="igual"></div>
-
-                    <div class="col-xs-2 displayinline">
-                        <select id="selecao2" onchange="converter()" class="form-control">
-                            <option value="1000000000000">Quilômetro quadrado (km²)</option>
-                            <option value="10000000000">Hectômetro quadrado (hm²)</option>
-                            <option value="100000000">Decâmetro quadrado (dam²)</option>
-                            <option value="1000000">Metro quadrado (m²)</option>
-                            <option value="10000">Decímetro quadrado (dm²)</option>
-                            <option value="100">Centímetro quadrado (cm²)</option>
-                            <option value="1">Milímetro quadrado (mm²)</option>
-                        </select>
-                    </div>
-                </div>
             </div>
         </div>
-
-
-
-
     </div>
 
 

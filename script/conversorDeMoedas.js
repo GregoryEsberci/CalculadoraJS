@@ -1,13 +1,13 @@
 
 //Converte as moedas
 function conversao(moedasRates) {
-    let  converterDe = document.getElementById('converterDe').value;
-    let  converterPara = document.getElementById('converterPara').value;
-    let  valorConverter = +document.getElementById('ValorConverter').value.replace(',', '.');
-    let  valorResultado = 0;
+    let converterDe = document.getElementById('converterDe').value;
+    let converterPara = document.getElementById('converterPara').value;
+    let valorConverter = +document.getElementById('ValorConverter').value.replace(',', '.');
+    let valorResultado = 0;
 
     const valorDe = moedasRates[converterDe];
-    let  valorPara = moedasRates[converterPara];
+    let valorPara = moedasRates[converterPara];
 
     valorResultado = (valorPara * valorConverter) / valorDe;
 
@@ -22,10 +22,10 @@ function conversao(moedasRates) {
 function sucess(moedas) {
 
     document.getElementById('loading').innerHTML = '';
-    let  rates = moedas.data.rates;
+    let rates = moedas.data.rates;
 
     //Exibe a data
-    let  date = new Date(moedas.data.timestamp * 1000).toLocaleString();
+    let date = new Date(moedas.data.timestamp * 1000).toLocaleString();
     document.getElementById('dataAtualizacao').innerHTML = date;
 
 
@@ -37,10 +37,10 @@ function sucess(moedas) {
 
 
 // set endpoint and your access key
-let  endpoint = 'latest'
-let  access_key = '8cdc3da4f1e5760ecab03e23e85ae383';
+let endpoint = 'latest'
+let access_key = '8cdc3da4f1e5760ecab03e23e85ae383';
 
-let  promise = axios.get('http://data.fixer.io/api/latest?access_key=8cdc3da4f1e5760ecab03e23e85ae383');
+let promise = axios.get('http://data.fixer.io/api/latest?access_key=8cdc3da4f1e5760ecab03e23e85ae383');
 
 let teste = promise.then(
     (result) => {
@@ -53,7 +53,7 @@ let teste = promise.then(
 
 
 
-let  siglasMoedas = [
+let siglasMoedas = [
     'AED',
     'AFN',
     'ALL',
@@ -224,8 +224,8 @@ let  siglasMoedas = [
 ];
 
 
-let  converterPara = document.getElementById('converterPara');
-let  converterDe = document.getElementById('converterDe');
+let converterPara = document.getElementById('converterPara');
+let converterDe = document.getElementById('converterDe');
 
 siglasMoedas.forEach((siglas) => {
     let optionPara = document.createElement('option');
